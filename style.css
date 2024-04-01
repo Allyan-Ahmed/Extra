@@ -1,0 +1,273 @@
+  /* hero section start  */
+  
+  .hero-container{
+    height: 97vh;
+    width: 97vw;
+    /* background-color: aqua; */
+  }
+
+  .circle-container{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+  }
+
+  .circle{
+    background-color: blue;
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    filter: blur(70px);
+    border-radius: 50%;
+  }
+
+#circle2 {
+  animation: anime 5s linear 1s infinite alternate-reverse;
+}
+
+#circle3 {
+  animation: anime2 5s linear 1s infinite alternate-reverse;
+}
+
+@keyframes anime {
+  from {
+    transform: translate(-10%, -10%);
+  }
+
+  to {
+    transform: translate(10%, 10%);
+  }
+}
+
+@keyframes anime2 {
+  from {
+    transform: translate(10%, 10%);
+  }
+
+  to {
+    transform: translate(-10%, -10%);
+  }
+}
+
+#circle2 {
+  animation: anime 5s linear 1s infinite alternate-reverse;
+}
+
+#circle3 {
+  animation: anime2 5s linear 1s infinite alternate-reverse;
+}
+
+@keyframes anime {
+  from {
+    transform: translate(-10%, -10%);
+  }
+
+  to {
+    transform: translate(10%, 10%);
+  }
+}
+
+@keyframes anime2 {
+  from {
+    transform: translate(10%, 10%);
+  }
+
+  to {
+    transform: translate(-10%, -10%);
+  }
+}
+
+
+.text{
+  position: relative;
+  /* padding-top: 20vh; */
+  /* background-color: white; */
+  top: 25%;
+  /* padding-left: 10%;
+  padding-right: 10%; */
+  padding: 2% 10%;
+  /* opacity: 0.4; */
+  z-index: 2;
+  background-color: transparent;
+  
+}
+
+.hero-heading{
+  font-size: 8vh;
+}
+
+
+.text2{
+  background-color: white;
+  height: 43vh;
+  width: 95vw;
+  z-index: 0;
+  position: absolute;
+  top: 26%;
+  border-radius: 10vh;
+  opacity: 0.2;
+  filter: blur(1px);
+}
+
+/* hero section end  */
+
+
+/* Service Section  */
+
+/* .service-container{
+  background-color: blue;
+  color: white;
+}
+
+.service-text{
+  text-align: center;
+  padding: 5% 0%;
+} */
+
+button{
+  /* text-align: center !important; */
+  /* margin: auto !important; */
+}
+
+.box2{
+  
+}
+
+.cssbuttons-io-button {
+  background: #a370f0;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 20px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #714da6;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #7b52b9;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #7b52b9;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+/* Service Section end */
+
+
+/* pricing section  */
+/* 
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 260px;
+  padding: 20px 1px;
+  margin: 10px 0;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  box-shadow: 0 10px 15px -3px rgba(33,150,243,.4),0 4px 6px -4px rgba(33,150,243,.4);
+  border-radius: 10px;
+  background-color: #6B6ECC;
+  background: linear-gradient(45deg, #04051dea 0%, #2b566e 100%);
+}
+
+.content {
+  padding: 20px;
+}
+
+.content .price {
+  color: white;
+  font-weight: 800;
+  font-size: 50px;
+  text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.42);
+}
+
+.content .description {
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.content .title {
+  font-weight: 800;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.64);
+  margin-top: 10px;
+  font-size: 25px;
+  letter-spacing: 1px;
+}
+
+button {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  border: none;
+  outline: none;
+  color: rgb(255 255 255);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: .75rem;
+  padding: 0.75rem 1.5rem;
+  background-color: rgb(33 150 243);
+  border-radius: 0.5rem;
+  width: 90%;
+  text-shadow: 0px 4px 18px #2c3442;
+} */
+
+
+
+/* pricing section end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
